@@ -1,6 +1,6 @@
 FROM java:8-jdk
 
-MAINTAINER Kenneth E. Bellock <ken.bellock@segmail.com>
+MAINTAINER Kenneth E. Bellock <ken@bellock.net>
 
 ENV GERRIT_VERSION 2.11.4
 ENV GERRIT_SHA 6de25f623ae2906c6e25dd766cda4654af0459af
