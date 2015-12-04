@@ -1,2 +1,2 @@
-# gerrit
-Docker image for gerrit code review
+# Gerrit Dockerfile
+Builds a docker image for gerrit code review
