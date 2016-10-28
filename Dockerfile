@@ -17,7 +17,7 @@ ENV GERRIT_URL https://www.gerritcodereview.com/download/$GERRIT_SOURCE
 ENV TINI_URL https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-static
 ENV TINI /bin/tini
 
-RUN set -x && apt-get update && apt-get install -y vim git curl gitweb && rm -rf /var/lib/apt/lists/* \
+RUN set -x && apt-get update && apt-get install -y git curl && rm -rf /var/lib/apt/lists/* \
     && useradd -m -d "$GERRIT_HOME" -u 1000 -s /bin/bash -U $GERRIT_USER \
     && curl -fL $TINI_URL -o $TINI && chmod +x $TINI \
     && echo "$TINI_SHA $TINI" | sha1sum -c -
